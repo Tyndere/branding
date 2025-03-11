@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="wheelGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#333333" />
+      <stop offset="40%" stop-color="#222222" />
+      <stop offset="60%" stop-color="#222222" />
+      <stop offset="100%" stop-color="#111111" />
+    </linearGradient>
+    <linearGradient id="wheelHighlight" x1="20%" y1="20%" x2="80%" y2="80%">
+      <stop offset="0%" stop-color="#555555" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#222222" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ridgeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#444444" />
+      <stop offset="50%" stop-color="#333333" />
+      <stop offset="100%" stop-color="#444444" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5" />
+      <feOffset dx="0" dy="5" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <ellipse cx="200" cy="200" rx="100" ry="130" fill="#1d1d1d" filter="url(#shadow)" />
+  
+  <ellipse cx="200" cy="200" rx="70" ry="100" fill="url(#wheelGradient)" />
+  
+  <ellipse cx="200" cy="200" rx="70" ry="100" fill="url(#wheelHighlight)" />
+  
+  <rect x="170" y="105" width="60" height="6" rx="2" fill="url(#ridgeGradient)" transform="rotate(-5 200 108)" />
+  <rect x="170" y="120" width="60" height="6" rx="2" fill="url(#ridgeGradient)" transform="rotate(-3 200 123)" />
+  <rect x="170" y="135" width="60" height="6" rx="2" fill="url(#ridgeGradient)" transform="rotate(-1 200 138)" />
+  
+  <rect x="170" y="150" width="60" height="6" rx="2" fill="url(#ridgeGradient)" />
+  <rect x="170" y="165" width="60" height="6" rx="2" fill="url(#ridgeGradient)" />
+  <rect x="170" y="180" width="60" height="6" rx="2" fill="url(#ridgeGradient)" />
+  <rect x="170" y="195" width="60" height="6" rx="2" fill="url(#ridgeGradient)" />
+  <rect x="170" y="210" width="60" height="6" rx="2" fill="url(#ridgeGradient)" />
+  
+  <rect x="170" y="225" width="60" height="6" rx="2" fill="url(#ridgeGradient)" transform="rotate(1 200 228)" />
+  <rect x="170" y="240" width="60" height="6" rx="2" fill="url(#ridgeGradient)" transform="rotate(3 200 243)" />
+  <rect x="170" y="255" width="60" height="6" rx="2" fill="url(#ridgeGradient)" transform="rotate(5 200 258)" />
+  
+  <ellipse cx="200" cy="130" rx="40" ry="10" fill="#ffffff" opacity="0.1" />
+  
+  <ellipse cx="240" cy="200" rx="8" ry="70" fill="#ffffff" opacity="0.07" />
+</svg>
